@@ -1,0 +1,11 @@
+The first bit of the image (0,0) definees what color is a zero
+The second bit of the image (0,1) defines what color is a one
+The remaning 220 bits of the image are comment colors
+
+The starting position is defined with the ID [00000000] (0) the next 2 bits are the position of the starting block
+The player is defined with the ID [00000001] (1) the next 2 bits are the cordinates in which the player starts
+A wall is defined with the ID [00000010] (2) the next 3 bits are unused
+A floor is defined with the ID [00000011] (3) the next 3 bits are unused
+A stop block is defined with the ID [00000100] (4) the next 3 bits are unused it is used for 3 way sections to stop the user temororly but allow passing through the block
+A door is defined with the ID [00000101] (5) bit 2 is for the door ID bit 3 is for the key ID to open the door bit 4 is weather the door is open or not (1) or (0)
+A key is defined with the ID [00000110] (6) bit 2 is for the key ID bit 3 is for the door ID to open the door bit 4 is weather the key is picked up or not (1) or (0)

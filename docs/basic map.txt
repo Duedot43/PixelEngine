@@ -1,0 +1,4 @@
+the first 2 colors (0,0) and (0,1) define what colors are 0 (0,0) and which colors are a 1 (0,1) this is used for the 32 bit data section to the very right of the map
+The next 223 pixels of the first row are comment colors, colors here are ignored by the engine
+
+The data section of the map hold the color and its definition built in definitions can be found on Basic Definitions.txt
