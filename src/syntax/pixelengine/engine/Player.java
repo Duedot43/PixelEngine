@@ -92,7 +92,7 @@ public class Player extends Map {
             new EngineError("Key does not have a door ID");
         }
         mapImage = super.changeBit(objInfo[1][0], objInfo[0], mapImage);
-        mapImage = super.changeCanvis(x, y, super.floor, mapImage);
+        movePlayer(x, y);
         System.out.println("Key " + objInfo[0][1] + " used");
     }
 
@@ -109,7 +109,7 @@ public class Player extends Map {
             objInfo[0][3] = 1;
             System.out.println("Door opened");
             mapImage = super.changeBit(objInfo[1][0], objInfo[0], mapImage); // Update door info to open
-            mapImage = super.changeCanvis(x, y, super.floor, mapImage);
+            movePlayer(x, y);
         } else {
             System.out.println("Door locked need key ID: " + needKeyID);
         }
